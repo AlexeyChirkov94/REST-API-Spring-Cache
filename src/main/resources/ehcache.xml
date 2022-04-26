@@ -1,0 +1,9 @@
+<ehcache name="custom_eh_cache">
+    <diskStore path="java.io.tmpdir"/>
+    <cache name="regions"
+           maxElementsInMemory="3"
+           eternal="false"
+           timeToIdleSeconds="60"
+           timeToLiveSeconds="0"
+           memoryStoreEvictionPolicy="LRU"/>
+</ehcache>
