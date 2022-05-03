@@ -96,7 +96,7 @@ In my application you cannot have more than one region with same name. And if yo
 
 ## Get a specific Region
 
-Here works Spring cache. If now you  make some repeatable requests, application will not go to database. It will get response from the cache. At this test case cache can contain only 3 elements.
+Here works Spring cache. If now you  make some repeatable requests, application will not go to database. It will get response from the cache.
 
 ### Request
 
@@ -133,7 +133,8 @@ Here works Spring cache. If now you  make some repeatable requests, application 
     
 ## Update Region
 
-Lest update Saint-Peterburg to Saint-P
+Lest update Saint-Peterburg to Saint-P.
+Updated value in the database we update the values in the cache too
 
 ### Request
 
@@ -152,11 +153,13 @@ Lest update Saint-Peterburg to Saint-P
     Content-Length: 0
     Date: Tue, 26 Apr 2022 07:32:43 GMT
     
+    {"id":1,"name":"Saint-P","abbreviatedName":"SPB"}
     
     
 ## Delete Region
 
-Let`s delete My Sity
+Let`s delete My Sity.
+Also this regions will be remove from cache.
 
 ### Request
 

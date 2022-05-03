@@ -96,7 +96,7 @@ class RegionControllerTest {
         region.setId(1);
         region.setName("Saint-Peterburg");
         region.setAbbreviatedName("SPb");
-        doNothing().when(regionService).update(region);
+        when(regionService.update(region)).thenReturn(region);
 
         mockMvc.perform(put("/api/region")
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
