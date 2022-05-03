@@ -11,7 +11,7 @@ public interface RegionService {
 
     Region findById(Integer id);
 
-    void update(Region region);
+    Region update(Region region);
 
     void delete(int id);
 

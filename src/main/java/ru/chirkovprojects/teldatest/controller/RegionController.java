@@ -38,8 +38,8 @@ public class RegionController {
     }
 
     @PutMapping()
-    public void update(@RequestBody Region region) {
-        regionService.update(region);
+    public Region update(@RequestBody Region region) {
+        return regionService.update(region);
     }
 
     @DeleteMapping("/{id}")

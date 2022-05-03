@@ -8,6 +8,15 @@ public class Region {
     private String name;
     private String abbreviatedName;
 
+    public Region(Integer id, String name, String abbreviatedName) {
+        this.id = id;
+        this.name = name;
+        this.abbreviatedName = abbreviatedName;
+    }
+
+    public Region() {
+    }
+
     public Integer getId() {
         return id;
     }
